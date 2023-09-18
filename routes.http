@@ -1,0 +1,34 @@
+POST http://localhost:3131/videos
+Content-Type: application/json
+
+{
+    "title": "Video node e ts",
+    "description": "Esse é o primeiro video de 3",
+    "duration": 180
+}
+
+###
+
+GET  http://localhost:3131/videos?search=node
+
+
+###
+
+GET  http://localhost:3131/videos
+
+
+###
+
+PUT http://localhost:3131/videos/9ecfd6f9-adfa-4ee8-8c17-18b290cc3525
+Content-Type: application/json
+
+{
+    "title": "Vídeo",
+    "description": "Esse é omeu primeiro vídeo",
+    "duration": 180
+}
+
+###
+DELETE http://localhost:3131/videos/9ecfd6f9-adfa-4ee8-8c17-18b290cc3525
+
+
